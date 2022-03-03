@@ -1,0 +1,153 @@
+@media only screen and (min-width: 35rem) {
+
+
+    /*----------- BODY --------------*/
+    
+    
+    
+    /*----------- HEADER --------------*/
+        .logo {width: 85px}
+        #headerWrapper header {justify-content: flex-start;}
+        #headerWrapper div h1 {font-size: 2rem;}
+        #headerWrapper div h2 {font-size: 1.6rem;}
+    
+    
+    /*----------- NAVIGATION --------------*/
+        #navWrapper nav button {display: none;}
+        #navWrapper nav ul {margin-left: 2%; margin-bottom: 0;}
+        #navWrapper nav ul li {float: left;}
+    
+        #navWrapper nav ul li a{padding: .5rem 2rem; text-align: center;}
+        #navWrapper nav ul li:first-child {border-top: none;}
+        .hide {display: block;}
+    
+    /*----------- MAIN --------------*/
+        main h2 {
+            margin-top: 1rem;
+        }
+
+        .status {
+            top: 1rem;
+            left: 1rem;
+        }
+    
+    /*----- Forecast Section -----*/
+
+        .forecast-mainheader {display: block; margin-bottom: 0;}
+        .forecast {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            margin-top: .3rem;
+        }
+
+        .weathercard {
+            margin-right: .5rem;
+            margin-top: 0;
+            border: 1px solid #161d6f;
+            padding-bottom: 1rem;
+        }
+
+        .forecastheader {
+            padding: .5rem 0;
+            color: #161d6f;
+            background-color: #d3eaef;
+            width: 100%;
+            margin: 0;
+        }
+
+
+        .weathericon {
+            width: 100%;
+        }
+
+        .temperature {
+            padding-bottom: 3px;
+        }
+
+        /*----- Article Section -----*/
+
+        .article {word-wrap: break-word;}
+
+        .article img {
+            width: 220px;
+            float: right;
+            margin-left: .2rem;
+            margin-bottom: .2rem;
+        }
+
+        /*----- Contact Section -----*/
+
+        .contact {
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-column-gap: 10px;
+        }
+
+        div.address {
+            grid-row: 1/2;
+        }
+
+        div.phone {
+            grid-row: 1/2;
+        }
+
+        div.email {
+            grid-row: 2/3;
+        }
+
+        div.map {
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+
+        .contactdiv {clear: both;}
+    
+    /*----- Image Gallery Rules -----*/
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .gallery figure img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .figure1,
+        .figure3,
+        .figure5,
+        .figure7,
+        .figure9 {
+            grid-column: 1/2;
+        }
+
+        .figure2,
+        .figure4,
+        .figure6,
+        .figure8 {
+            grid-column: 2/3;
+        }
+
+        /*----- Storm Center Page Rules ------*/
+
+        form label.top input, form label.top select, label.top textarea{
+            max-width: 27rem;
+        }
+        form fieldset {
+            padding: 1rem 2% 2rem 3rem;
+        }
+
+        /*--------- Home Page Rules ---------*/
+        section.towns-info section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section.towns-info section img, section.towns-info section div {
+            width: 50%;
+        }
+    }
+     /* end of media query */

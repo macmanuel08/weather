@@ -1,0 +1,63 @@
+@media only screen and (min-width: 56rem) {
+
+    header, nav, main, footer {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .figure1,
+    .figure4,
+    .figure7, {
+        grid-column: 1/2;
+    }
+
+    .figure2,
+    .figure5,
+    .figure8, {
+        grid-column: 2/3;
+    }
+
+    .figure3,
+    .figure6,
+    .figure9 {
+        grid-column: 3/4;
+    }
+
+    .figure4,
+    .figure5,
+    .figure6 {
+        grid-row: 2/3;
+    }
+
+    .gallery figure:hover {
+        box-shadow: 3px 3px 15px #000080;
+    }
+
+    /*------ Storm Center ------*/
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    /*--------- Home Page Rules ---------*/
+
+    section.towns-info section {
+        display: block;
+    }
+
+    section.towns-info section img, section.towns-info section div {
+        width: 100%;
+    }
+
+    section.towns-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .5rem;
+    }
+
+}
