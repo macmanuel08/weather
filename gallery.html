@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Preston page for weather site page as part of project in WDD 230">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery page for the Weather Site project in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
+    <title>Gallery: iStorm</title>
+
+    <!-- Fav Icon Link -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Mukta:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- JS Link -->
+    <script type="text/javascript" src="js/responsiveMenu.js" defer></script>
+
+</head>
+<body>
+    <div id="message">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <img class="logo" src="images/weatherlogo.png" alt="Weather logo">
+            <div>
+                <h1>iStorm</h1>
+                <h2>Better off ready in every storm of life</h2>
+            </div>
+        </header>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodaspring.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Weather Gallery</h1>
+
+        <div class="gallery">
+            <figure class="figure1">
+                <img src="images/gray.jpg" data-src="images/canada-fall.jpg" alt="Canada fall season" width="300" height="200">
+                <figcaption>Fall</figcaption>
+            </figure>
+            <figure class="figure2">
+                <img src="images/gray.jpg" data-src="images/cloudy-beach.jpg" alt="Cloudy beach" width="300" height="200">
+                <figcaption>Cloudy beach</figcaption>
+            </figure>
+            <figure class="figure3">
+                <img src="images/gray.jpg" data-src="images/cloudy-lake.jpg" alt="Cloudy lake" width="300" height="200">
+                <figcaption>Cloudy lake</figcaption>
+            </figure>
+            <figure class="figure4">
+                <img src="images/gray.jpg" data-src="images/dark-clouds.jpg" alt="Dark clouds" width="300" height="200">
+                <figcaption>Dark clouds</figcaption>
+            </figure>
+            <figure class="figure5">
+                <img src="images/gray.jpg" data-src="images/flooded-road.jpg" alt="Flooded road" width="300" height="200">
+                <figcaption>Flooded road</figcaption>
+            </figure>
+            <figure class="figure6">
+                <img src="images/gray.jpg" data-src="images/greeny-sunrise.jpg" alt="Grass and sunrise" width="300" height="200">
+                <figcaption>Green grass and yellow sun</figcaption>
+            </figure>
+            <figure class="figure7">
+                <img src="images/gray.jpg" data-src="images/sakura.jpg" alt="Cherry blossom" width="300" height="200">
+                <figcaption>Cherry blossom</figcaption>
+            </figure>
+            <figure class="figure8">
+                <img src="images/gray.jpg" data-src="images/snow-valley.jpg" alt="Snowy valley" width="300" height="200">
+                <figcaption>Snowy Valley</figcaption>
+            </figure>
+            <figure class="figure9">
+                <img src="images/gray.jpg" data-src="images/yellow-flowers.jpg" alt="Yellow flowers" width="300" height="200">
+                <figcaption>Beautiful yellow flowers</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <div id="footerWrapper">
+        <footer>
+
+            &copy; John Mark Manuel &bull; <span id="date"></span><br>
+            <span id="visit"></span>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script type="text/javascript" src="js/fontloader.js"></script>
+    <script type="text/javascript" src="js/lazyimage.js"></script>
+</body>
+</html>
