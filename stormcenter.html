@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Preston page for weather site page as part of project in WDD 230">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Storm Center page for the Weather Site project in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
+    <title>Center: iStorm</title>
+
+    <!-- Fav Icon Link -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Mukta:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- JS Link -->
+    <script type="text/javascript" src="js/responsiveMenu.js" defer></script>
+
+</head>
+<body>
+    <div id="message">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <img class="logo" src="images/weatherlogo.png" alt="Weather logo">
+            <div>
+                <h1>iStorm</h1>
+                <h2>Better off ready in every storm of life</h2>
+            </div>
+        </header>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodaspring.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>iStorm Center</h1>
+
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Information About You</legend>
+                <label class="top">Full Name* <input type="text" name="name" required pattern="[A-Za-z ]{5,}" minlength="5"></label>
+                <label class="top">Email <input type="email" placeholder="abc@istorm.com" name="email"></label>
+                <label class="top">Phone Number* <input type="tel" required name="phone"></label>
+                <label class="top">Zip Code* <input type="number" required name="zip"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Infromation About Storm</legend>
+                <label class="top">Storm Date <input type="date" name="date"></label>
+                <label class="top">Storm Type <input list="storms" name="type"></label>
+                <datalist id="storms">
+                    <option value="Flash flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <label class="sbs1">Storm Severity (1-10) <input type="range" name="severity" min="1" max="10" value="5" step="1"></label>
+                <label class="top">Storm Region 
+                    <select name="region">
+                            <option value="">Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaspring">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+                <div class="top">User In-Danger level</div>
+                <label class="sbs"><input type="radio" name="level" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="level" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="level" value="maybe"> Maybe</label>
+                <label class="top">Additional information or comments <textarea name="additional"></textarea></label>
+                <input type="Submit" value="Report Storm" class="btn">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <div id="footerWrapper">
+        <footer>
+
+            &copy; John Mark Manuel &bull; <span id="date"></span><br>
+            <span id="visit"></span>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script type="text/javascript" src="js/fontloader.js"></script>
+    <script type="text/javascript" src="js/lazyimage.js"></script>
+</body>
+</html>
