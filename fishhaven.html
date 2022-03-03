@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Preston page for weather site page as part of project in WDD 230">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fish Haven Town page for the Weather Site project in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
+    <title>Fish Haven: iStorm</title>
+
+    <!-- Fav Icon Link -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Mukta:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- JS Link -->
+    <script type="text/javascript" src="js/responsiveMenu.js" defer></script>
+    <script type="text/javascript" src="js/weather.js" defer></script>
+    <script type="text/javascript" src="js/forecast.js" defer></script>
+    <script type="text/javascript" src="js/event.js" defer></script>
+
+
+</head>
+<body>
+    <div id="message">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <img class="logo" src="images/weatherlogo.png" alt="Weather logo">
+            <div>
+                <h1>iStorm</h1>
+                <h2>Better off ready in every storm of life</h2>
+            </div>
+        </header>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodaspring.html">Soda Springs</a></li>
+                <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1 id="cityid">Fish Haven</h1>
+
+        <div class="weathersummary">
+            <picture>
+                <source media="(max-width: 425px)" srcset="images/fishhaven-sml.jpg">
+                <source media="(max-width: 768px)" srcset="images/fishhaven-med.jpg">
+                <source media="(max-width: 1280px)" srcset="images/fishhaven-lrg.jpg">
+                <img src="images/fishhaven-lrg.jpg" alt="Aerial view of Fish Haven, Idaho">
+            </picture>
+            <section class="status">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="weather"></span></p>
+                <p>High: <span id="temperature"></span>&deg;F</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span>mph</p>
+            </section>
+        </div>
+
+        <section>
+            <h2 class="forecast-mainheader">5-Day Forecast</h2>
+            <div class="forecast"></div>
+        </section>
+
+        <article class="article">
+            <h2>Getting Ready</h2>
+            <img src="images/emergencykit.jpg" alt="emergency kit" loading="lazy">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aspernatur corporis quas, ea deserunt totam delectus quibusdam rerum, consequatur culpa eaque eligendi magnam odit quos autem quae alias vitae facilis!
+            Ratione voluptas ullam earum amet nisi recusandae blanditiis quos laudantium voluptatem pariatur expedita autem, fugiat eius optio molestias dicta assumenda rem! Rem, illo quod? Cumque eveniet explicabo perferendis eos ad?
+            Temporibus maxime eveniet autem, fuga dolorem sit eius, doloremque dolorum ullam accusamus illum? Sit aliquid totam at illum, accusantium, id sapiente nesciunt recusandae dolorum laborum et corporis laudantium autem nemo.
+            Possimus voluptates laboriosam amet tenetur modi vero explicabo, corrupti quae sint consectetur eligendi accusamus et ipsum iste reiciendis molestias, maiores expedita sapiente? Atque nulla rem dignissimos placeat earum veritatis eligendi.
+            Ea dolor, quisquam maiores nihil consectetur suscipit repellat ducimus. Asperiores quas dolorum error distinctio corporis! Impedit omnis totam sapiente quis? Quam minus repellendus ducimus saepe animi dolor cum quidem voluptate?
+            Ratione quis, fugit itaque asperiores cum molestias iure officiis iste? Corrupti amet quidem, facilis expedita doloremque eum sunt, nesciunt similique incidunt recusandae, sed iure quae optio doloribus harum asperiores quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis repudiandae nihil vel, illo aspernatur aperiam delectus ratione earum animi ex molestias corrupti eius sed, quis dolore iure error ipsum. Ex?</p>
+        </article>
+
+        <section class="event-container">
+            <div id="events" class="events">
+                <h3>Upcoming Events:</h3>
+            </div>
+        </section>
+
+        <div class="contactdiv">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <div class="address">
+                    <h3>Adress:</h3>
+                    <p>
+                        The Weather Center<br>
+                        123 Main Street.<br>
+                        Franklin, MI 87654
+                    </p>
+                </div>
+                <div class="phone">
+                    <h3>Phone:</h3>
+                    <p>(801) 555-1234</p>
+                </div>
+                <div class="email">
+                    <h3>Email:</h3>
+                    <p>contact@yoururl.com</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://maps.google.com/maps?q=idaho%20fish%20haven&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footerWrapper">
+        <footer>
+
+            &copy; John Mark Manuel &bull; <span id="date"></span><br>
+            <span id="visit"></span>
+        </footer>
+    </div>
+
+    <!-- JS Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script type="text/javascript" src="js/fontloader.js"></script>
+</body>
+</html>
