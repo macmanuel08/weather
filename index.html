@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Preston page for weather site page as part of project in WDD 230">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for the Weather Site project in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
+    <title>Home: iStorm</title>
+
+    <!-- Fav Icon Link -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Mukta:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- JS Link -->
+    <script type="text/javascript" src="js/responsiveMenu.js" defer></script>
+
+</head>
+<body>
+    <div id="message">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <img class="logo" src="images/weatherlogo.png" alt="Weather logo">
+            <div>
+                <h1>iStorm</h1>
+                <h2>Better off ready in every storm of life</h2>
+            </div>
+        </header>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodaspring.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <h1>iStorm Home</h1>
+        <div class="hero-image">
+            <picture>
+                <source media="(max-width: 425px)" srcset="images/hero-image-s.jpg">
+                <source media="(max-width: 768px)" srcset="images/hero-image-m.jpg">
+                <source media="(max-width: 1440px)" srcset="images/hero-image-l.jpg">
+                <img src="images/hero-image-l.jpg" alt="Beautiful sunrise in a paradise">
+            </picture>
+        </div>
+
+        <h2>Preparation for Storms</h2>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo beatae natus sed repellat vel reiciendis tempore, nobis minus voluptas adipisci porro. Ab iure tempora, porro inventore et quos doloremque!
+        Repellendus est eveniet ullam, vero esse at voluptatum, suscipit ratione accusamus alias vel dolorum aperiam cumque odit voluptas incidunt voluptatibus iusto quia ducimus amet commodi corrupti magni corporis porro? Aliquid!
+        Commodi sunt quas aliquam, ratione delectus expedita quaerat voluptate, facere doloremque voluptas reprehenderit, aut perferendis exercitationem a consequatur? Dolores quo ea placeat molestias repellat cupiditate ipsa natus cum quas architecto?</p>
+
+        <section class="towns-info"></section>
+
+        <div class="contactdiv">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <div class="address">
+                    <h3>Adress:</h3>
+                    <p>
+                        The Weather Center<br>
+                        123 Main Street.<br>
+                        Franklin, MI 87654
+                    </p>
+                </div>
+                <div class="phone">
+                    <h3>Phone:</h3>
+                    <p>(801) 555-1234</p>
+                </div>
+                <div class="email">
+                    <h3>Email:</h3>
+                    <p>contact@yoururl.com</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385347282!2d-111.91534458441606!3d42.09974162634388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1621420674358!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footerWrapper">
+        <footer>
+
+            &copy; John Mark Manuel &bull; <span id="date"></span><br>
+            <span id="visit"></span>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script type="text/javascript" src="js/fontloader.js"></script>
+    <script type="text/javascript" src="js/towns.js" defer></script>
+</body>
+</html>
